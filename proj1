@@ -1,0 +1,31 @@
+import java.util.Scanner;//Num1
+// import java.util.*;
+
+public class ChangeCounter
+{
+//-----------------------------------------------------------------
+// Computes the total value of a collection of coins.
+//-----------------------------------------------------------------
+public static void main (String[] args)
+{
+int quarters, dimes, nickels, pennies;
+double total;
+Scanner scan = new Scanner (System.in);//num 2
+
+System.out.print ("Enter the number of quarters: ");
+quarters = scan.nextInt();//num3
+System.out.print ("Enter the number of dimes: ");
+dimes = scan.nextInt();
+
+System.out.print ("Enter the number of nickels: ");
+nickels = scan.nextInt();
+
+System.out.print ("Enter the number of pennies: ");
+pennies = scan.nextInt();
+
+total = quarters * 25 + dimes * 10 + nickels * 5 + pennies;
+total = total / 100;
+
+System.out.println ("Total value: " + (total));
+}
+}
